@@ -30,9 +30,12 @@
         android:backgroundTint="@color/white"
         app:cornerRadius="16dp"
         app:icon="@drawable/ic_vector"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:iconPadding="10dp"
 
         />
-
+    <!--@dimen/icon_padding-->
     <Button
 
         android:layout_width="match_parent"
@@ -43,6 +46,9 @@
         android:backgroundTint="@color/white"
         app:cornerRadius="16dp"
         app:icon="@drawable/ic_media"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:iconPadding="10dp"
         />
 
     <Button
@@ -54,6 +60,9 @@
         android:backgroundTint="@color/white"
         app:cornerRadius="16dp"
         app:icon="@drawable/ic_options"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:iconPadding="10dp"
 
 
         />
