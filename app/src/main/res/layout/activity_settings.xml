@@ -1,7 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrowback"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="64dp"
+            android:text="@string/options"
+            android:textColor="#1A1B22"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/night_theme"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high"
+            android:paddingStart="@dimen/start_txt_pad"
+            android:paddingTop="@dimen/top_txt_pad"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="80dp"
+            />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/knob"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="80dp"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high"
+            android:paddingStart="@dimen/start_txt_pad"
+            android:paddingTop="@dimen/top_txt_pad"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="141dp" />
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/share"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="141dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/support_ask"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high"
+            android:paddingStart="@dimen/start_txt_pad"
+            android:paddingTop="@dimen/top_txt_pad"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="202dp" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/brain"
+            android:layout_gravity="end"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="202dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_agreement"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high"
+            android:paddingLeft="@dimen/start_txt_pad"
+            android:paddingTop="@dimen/top_txt_pad"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="263dp" />
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/agreement"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="263dp"/>
+    </FrameLayout>
+
+</FrameLayout>
