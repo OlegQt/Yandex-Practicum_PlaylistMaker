@@ -21,6 +21,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="40dp"
@@ -40,6 +41,7 @@
     <!--@dimen/icon_padding-->
     <Button
 
+        android:id="@+id/media"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -53,20 +55,19 @@
         app:iconPadding="10dp"
         />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:text="@string/options"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/white"
-        app:cornerRadius="@dimen/button_corner_radius"
         app:icon="@drawable/ic_options"
         app:iconGravity="textStart"
         app:iconTint="@color/black"
         app:iconPadding="10dp"
-
-
+        app:cornerRadius="@dimen/button_corner_radius"
         />
 
 
