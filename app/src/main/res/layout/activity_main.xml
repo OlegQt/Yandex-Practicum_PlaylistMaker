@@ -70,6 +70,4 @@
         app:cornerRadius="@dimen/button_corner_radius"
         />
 
-
-
 </LinearLayout>
