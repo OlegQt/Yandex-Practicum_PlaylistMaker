@@ -18,12 +18,13 @@ class MainActivity : AppCompatActivity() {
         btnSettings = findViewById(R.id.settings)
 
         // Объявление интентов
-        val displayIntent = Intent(this.baseContext, ActivitySettings::class.java)
+        val settingsScreen = Intent(this.baseContext, ActivitySettings::class.java)
+        val mediaScreen = Intent(this.baseContext, ActivityMedia::class.java)
+        val searchScreen = Intent(this.baseContext, ActivitySearch::class.java)
 
-
-        btnSearch.setOnClickListener { }
-        btnMedia.setOnClickListener { }
-        btnSettings?.setOnClickListener { startActivity(displayIntent) }
+        btnSearch.setOnClickListener { startActivity(searchScreen) }
+        btnMedia.setOnClickListener { startActivity(mediaScreen) }
+        btnSettings?.setOnClickListener { startActivity(settingsScreen) }
 
     }
 }
