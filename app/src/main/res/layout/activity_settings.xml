@@ -1,120 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/backToMainActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/arrowback"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"/>
+            android:src="@drawable/arrowback" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
             android:layout_marginStart="64dp"
+            android:layout_marginTop="14dp"
             android:text="@string/options"
             android:textColor="#1A1B22"
             android:textSize="22sp"
             android:textStyle="bold" />
     </FrameLayout>
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="@dimen/start_txt_pad"
+
+        >
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="7"
             android:layout_height="wrap_content"
+            android:paddingTop="@dimen/top_txt_pad"
+            android:paddingBottom="0dp"
+            android:gravity="start"
             android:text="@string/night_theme"
             android:textColor="@color/black"
             android:textSize="@dimen/text_size_high"
-            android:paddingStart="@dimen/start_txt_pad"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:paddingBottom="0dp"
-            android:layout_marginTop="80dp"
             />
 
-        <ImageView
-            android:layout_width="35dp"
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/top_txt_pad"
             android:layout_height="match_parent"
-            android:src="@drawable/knob"
-            android:layout_gravity="end"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="80dp"/>
-    </FrameLayout>
+
+
+            android:gravity="end"
+
+            />
+
+    </LinearLayout>
 
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/share_app"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high"
+            android:layout_marginTop="141dp"
             android:paddingStart="@dimen/start_txt_pad"
             android:paddingTop="@dimen/top_txt_pad"
             android:paddingBottom="0dp"
-            android:layout_marginTop="141dp" />
+            android:text="@string/share_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high" />
+
         <ImageView
             android:layout_width="18dp"
             android:layout_height="match_parent"
-            android:src="@drawable/share"
             android:layout_gravity="end"
+            android:layout_marginTop="141dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="141dp"/>
+            android:src="@drawable/share" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/support_ask"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high"
+            android:layout_marginTop="202dp"
             android:paddingStart="@dimen/start_txt_pad"
             android:paddingTop="@dimen/top_txt_pad"
             android:paddingBottom="0dp"
-            android:layout_marginTop="202dp" />
+            android:text="@string/support_ask"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high" />
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/brain"
             android:layout_gravity="end"
+            android:layout_marginTop="202dp"
             android:layout_marginEnd="14dp"
-            android:layout_marginTop="202dp"/>
+            android:src="@drawable/brain" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/user_agreement"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high"
+            android:layout_marginTop="263dp"
             android:paddingLeft="@dimen/start_txt_pad"
             android:paddingTop="@dimen/top_txt_pad"
             android:paddingBottom="0dp"
-            android:layout_marginTop="263dp" />
+            android:text="@string/user_agreement"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high" />
+
         <ImageView
             android:layout_width="8dp"
             android:layout_height="match_parent"
-            android:src="@drawable/agreement"
             android:layout_gravity="end"
+            android:layout_marginTop="263dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="263dp"/>
+            android:src="@drawable/agreement" />
     </FrameLayout>
 
 </FrameLayout>
