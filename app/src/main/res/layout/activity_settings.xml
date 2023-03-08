@@ -1,137 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ActivitySettings"
+    >
 
-    <FrameLayout
+    <!-- Settings -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/backToMainActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/arrowback" />
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/arrowback"
+            android:contentDescription="@string/options"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginStart="60dp"
             android:text="@string/options"
-            android:textColor="#1A1B22"
-            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_high"
             android:textStyle="bold" />
-    </FrameLayout>
+    </LinearLayout>
 
+    <!-- Dark theme -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="80dp"
-        android:layout_marginStart="@dimen/start_txt_pad"
+        android:layout_marginStart="@dimen/settings_margin_start"
+        android:layout_marginTop="40dp"
 
-        >
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/settings_padding"
+        android:paddingBottom="@dimen/settings_padding">
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_weight="7"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:paddingBottom="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+
             android:gravity="start"
             android:text="@string/night_theme"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high"
-            />
+            android:textSize="@dimen/medium_txt_height" />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="19dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Share app -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/settings_margin_start"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/settings_padding"
+        android:paddingBottom="@dimen/settings_padding">
+
+        <TextView
+            android:layout_width="@dimen/zero_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+
+            android:gravity="start"
+            android:text="@string/share_app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_txt_height" />
+
+        <ImageView
+            android:layout_width="@dimen/zero_width"
             android:layout_weight="1"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:layout_height="match_parent"
-
-
-            android:gravity="end"
-
-            />
+            android:layout_height="@dimen/settings_img_height"
+            android:layout_gravity="end"
+            android:src="@drawable/share"
+            android:contentDescription="@string/share_app"/>
 
     </LinearLayout>
 
-
-    <FrameLayout
+    <!-- Ask prof -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/settings_margin_start"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/settings_padding"
+        android:paddingBottom="@dimen/settings_padding">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
-            android:layout_marginTop="141dp"
-            android:paddingStart="@dimen/start_txt_pad"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:paddingBottom="0dp"
-            android:text="@string/share_app"
-            android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
 
-        <ImageView
-            android:layout_width="18dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:layout_marginTop="141dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/share" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="202dp"
-            android:paddingStart="@dimen/start_txt_pad"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:paddingBottom="0dp"
+            android:gravity="start"
             android:text="@string/support_ask"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high" />
+            android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="match_parent"
+            android:layout_width="@dimen/zero_width"
+            android:layout_weight="1"
+            android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
-            android:layout_marginTop="202dp"
-            android:layout_marginEnd="14dp"
-            android:src="@drawable/brain" />
-    </FrameLayout>
+            android:src="@drawable/brain"
+            android:contentDescription="@string/support_ask"/>
+    </LinearLayout>
 
-    <FrameLayout
+    <!-- Agreement -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/settings_margin_start"
+
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/settings_padding"
+        android:paddingBottom="@dimen/settings_padding">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="263dp"
-            android:paddingLeft="@dimen/start_txt_pad"
-            android:paddingTop="@dimen/top_txt_pad"
-            android:paddingBottom="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+
+            android:gravity="start"
             android:text="@string/user_agreement"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high" />
+            android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="8dp"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
-            android:layout_marginTop="263dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/agreement" />
-    </FrameLayout>
+            android:src="@drawable/agreement"
+            android:contentDescription="@string/user_agreement" />
 
-</FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
