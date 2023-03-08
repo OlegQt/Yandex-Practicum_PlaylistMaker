@@ -138,7 +138,7 @@
         android:paddingBottom="@dimen/settings_padding">
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="5"
@@ -149,7 +149,7 @@
             android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="0dp"
+            android:layout_width="@dimen/zero_width"
             android:layout_weight="1"
             android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
