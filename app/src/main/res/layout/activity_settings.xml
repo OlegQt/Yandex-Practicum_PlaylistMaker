@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
     android:background="@color/white"
+    android:backgroundTint="@color/white"
     android:orientation="vertical"
-    tools:context=".ActivitySettings"
-    >
+    tools:context=".ActivitySettings">
 
     <!-- Settings -->
     <LinearLayout
@@ -23,19 +21,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:src="@drawable/arrowback"
             android:contentDescription="@string/options"
-            />
+            android:src="@drawable/arrowback" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="28dp"
             android:text="@string/options"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_high"
-            />
+            android:textSize="@dimen/text_size_high" />
     </LinearLayout>
 
     <!-- Dark theme -->
@@ -47,8 +43,7 @@
         android:layout_marginEnd="18dp"
 
         android:orientation="horizontal"
-        android:paddingVertical="@dimen/settings_padding"
-        >
+        android:paddingVertical="@dimen/settings_padding">
 
         <TextView
             android:layout_width="@dimen/zero_width"
@@ -64,8 +59,7 @@
         <androidx.appcompat.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="19dp"
-            android:layout_gravity="center_vertical"
-            />
+            android:layout_gravity="center_vertical" />
     </LinearLayout>
 
     <!-- Share app -->
@@ -76,8 +70,7 @@
         android:layout_marginEnd="@dimen/settings_margin_end"
 
         android:orientation="horizontal"
-        android:paddingVertical="@dimen/settings_padding"
-        >
+        android:paddingVertical="@dimen/settings_padding">
 
         <TextView
             android:layout_width="@dimen/zero_width"
@@ -94,8 +87,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/share_app_ic"
-            android:contentDescription="@string/share_app"/>
+            android:contentDescription="@string/share_app"
+            android:src="@drawable/share_app_ic" />
 
     </LinearLayout>
 
@@ -107,8 +100,7 @@
         android:layout_marginEnd="14dp"
 
         android:orientation="horizontal"
-        android:paddingVertical="@dimen/settings_padding"
-        >
+        android:paddingVertical="@dimen/settings_padding">
 
         <TextView
             android:layout_width="@dimen/zero_width"
@@ -125,8 +117,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/support_ask"
-            android:contentDescription="@string/support_ask"/>
+            android:contentDescription="@string/support_ask"
+            android:src="@drawable/support_ask" />
     </LinearLayout>
 
     <!-- Agreement -->
@@ -137,8 +129,7 @@
         android:layout_marginEnd="20dp"
 
         android:orientation="horizontal"
-        android:paddingVertical="@dimen/settings_padding"
-        >
+        android:paddingVertical="@dimen/settings_padding">
 
         <TextView
             android:layout_width="@dimen/zero_width"
@@ -155,8 +146,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/agreement"
-            android:contentDescription="@string/user_agreement" />
+            android:contentDescription="@string/user_agreement"
+            android:src="@drawable/agreement" />
 
     </LinearLayout>
 
