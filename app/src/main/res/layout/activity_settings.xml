@@ -44,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/settings_margin_start"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="18dp"
 
         android:orientation="horizontal"
         android:paddingVertical="@dimen/settings_padding"
@@ -53,7 +54,7 @@
             android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="5"
+            android:layout_weight="1"
 
             android:gravity="start"
             android:text="@string/night_theme"
@@ -61,10 +62,10 @@
             android:textSize="@dimen/medium_txt_height" />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:layout_width="@dimen/zero_width"
+            android:layout_width="wrap_content"
             android:layout_height="19dp"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1" />
+            />
     </LinearLayout>
 
     <!-- Share app -->
@@ -72,6 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/settings_margin_start"
+        android:layout_marginEnd="@dimen/settings_margin_end"
 
         android:orientation="horizontal"
         android:paddingVertical="@dimen/settings_padding"
@@ -81,7 +83,7 @@
             android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="5"
+            android:layout_weight="1"
 
             android:gravity="start"
             android:text="@string/share_app"
@@ -89,8 +91,7 @@
             android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="@dimen/zero_width"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
             android:src="@drawable/share"
@@ -103,6 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/settings_margin_start"
+        android:layout_marginEnd="14dp"
 
         android:orientation="horizontal"
         android:paddingVertical="@dimen/settings_padding"
@@ -112,7 +114,7 @@
             android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="5"
+            android:layout_weight="1"
 
             android:gravity="start"
             android:text="@string/support_ask"
@@ -120,8 +122,7 @@
             android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="@dimen/zero_width"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
             android:src="@drawable/brain"
@@ -133,6 +134,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/settings_margin_start"
+        android:layout_marginEnd="20dp"
 
         android:orientation="horizontal"
         android:paddingVertical="@dimen/settings_padding"
@@ -142,7 +144,7 @@
             android:layout_width="@dimen/zero_width"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="5"
+            android:layout_weight="1"
 
             android:gravity="start"
             android:text="@string/user_agreement"
@@ -150,8 +152,7 @@
             android:textSize="@dimen/medium_txt_height" />
 
         <ImageView
-            android:layout_width="@dimen/zero_width"
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/settings_img_height"
             android:layout_gravity="end"
             android:src="@drawable/agreement"
