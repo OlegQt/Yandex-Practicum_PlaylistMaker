@@ -92,9 +92,9 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/settings_img_height"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/share"
+            android:src="@drawable/share_app_ic"
             android:contentDescription="@string/share_app"/>
 
     </LinearLayout>
@@ -123,9 +123,9 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/settings_img_height"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/brain"
+            android:src="@drawable/support_ask"
             android:contentDescription="@string/support_ask"/>
     </LinearLayout>
 
@@ -153,7 +153,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/settings_img_height"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:src="@drawable/agreement"
             android:contentDescription="@string/user_agreement" />
